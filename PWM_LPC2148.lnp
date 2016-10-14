@@ -1,0 +1,7 @@
+--cpu ARM7TDMI
+".\startup.o"
+".\pwm.o"
+--strict --scatter ".\PWM_LPC2148.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\PWM_LPC2148.map" -o .\PWM_LPC2148.axf
